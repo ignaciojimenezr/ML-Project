@@ -1,0 +1,11 @@
+# Ignore everything
+*
+
+# But don't ignore these files
+!train_logistic_regression.py
+!preprocess.py
+!processed_data.csv
+
+# Don't ignore the .gitignore file itself
+!.gitignore
+
