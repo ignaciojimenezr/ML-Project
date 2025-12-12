@@ -36,7 +36,7 @@ Each model performs data loading, train/test splitting, GirdSearchCV tuning, tra
 urldata.csv must be in the same directory
 **Required columms:**
   - url: url string
-  - type: catogorical label
+  - type: catogorical label  
   **Lable Columns:**  
     Primary label: type_encoded
         - Encoded values: benign → 0, phishing → 1, malware → 2, defacement → 3  
