@@ -39,7 +39,7 @@ urldata.csv must be in the same directory
   - type: catogorical label
   **Lable Columns:**  
     Primary label: type_encoded
-        - Encoded values: benign → 0, phishing → 1, malware → 2, defacement → 3
+        - Encoded values: benign → 0, phishing → 1, malware → 2, defacement → 3  
     Ignored label: type (Kept for reference only and is not used for training)  
     all remaining colums are numeric features
   
