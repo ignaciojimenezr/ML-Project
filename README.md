@@ -9,13 +9,13 @@ This project first processes a dataset of URLs and prepares it for machine-learn
 Each model performs data loading, train/test splitting, GirdSearchCV tuning, training, evaluation, and metrics reporting. KNN and Logistic regression Generate a multiclass ROC curve. While Random Forest generates a confusion matrix.
 
 ## Project Structure 
-  -urldata.csv
-  -preprocess.py
-  -processed_data.csv
-  -KNN.py
-  -RandomForest.py
-  -train_logistic_regression.py
-  -README.pdf
+  - urldata.csv
+  - preprocess.py
+  - processed_data.csv
+  - KNN.py
+  - RandomForest.py
+  - train_logistic_regression.py
+  - README.pdf
 
 ## Environment & Requirements
 ### Python Version
@@ -37,16 +37,11 @@ urldata.csv must be in the same directory
 **Required columms:**
   - url: url string
   - type: catogorical label
-  **Lable Columns:**
-    -Primary label: type_encoded
-        - Encoded values:
-          - benign → 0
-          - phishing → 1
-          - malware → 2
-          - defacement → 3
-        - Ignored label: type
-          - Kept for reference only and is not used for training
-  all remaining colums are numeric features
+  **Lable Columns:**  
+    Primary label: type_encoded
+        - Encoded values: benign → 0, phishing → 1, malware → 2, defacement → 3
+    Ignored label: type (Kept for reference only and is not used for training)  
+    all remaining colums are numeric features
   
 processed_data.csv must be in the same directory
   - Label: type_encoded
@@ -70,11 +65,11 @@ processed_data.csv must be in the same directory
   Outputs: best params, metrics, ROC curve  
   
 **Hyperparameter Tuning Summary**  
-KNN: n_neighbors, weights, metric  
+  KNN: n_neighbors, weights, metric  
 
-Random Forest: n_estimators, max_depth, min_samples_split, min_samples_leaf, max_features  
+  Random Forest: n_estimators, max_depth, min_samples_split, min_samples_leaf, max_features  
 
-Logistic Regression: C values
+  Logistic Regression: C values
 
 
    
