@@ -21,8 +21,6 @@ Each model performs data loading, train/test splitting, GirdSearchCV tuning, tra
 ### Python Version
   Python 3.8+
 ### Required libraries
-  -pandas
-  -numpy
    - pandas
    - numpy
    - scikit-learn
@@ -37,17 +35,17 @@ Each model performs data loading, train/test splitting, GirdSearchCV tuning, tra
 ### Dataset Requirements
 urldata.csv must be in the same directory
 **Required columms:**
-  -url: url string
-  -type: catogorical label
+  - url: url string
+  - type: catogorical label
   **Lable Columns:**
     -Primary label: type_encoded
-        -Encoded values:
-          benign → 0
-          phishing → 1
-          malware → 2
-          defacement → 3
-        -Ignored label: type
-          -Kept for reference only and is not used for training
+        - Encoded values:
+          - benign → 0
+          - phishing → 1
+          - malware → 2
+          - defacement → 3
+        - Ignored label: type
+          - Kept for reference only and is not used for training
   all remaining colums are numeric features
   
 processed_data.csv must be in the same directory
@@ -55,25 +53,26 @@ processed_data.csv must be in the same directory
   - Ignored label: type
   -  all remaining colums are numeric features
 ### How to run
-**Preprocessing**
-  python preprocess_urls.py
-  Outputs: processed_data.csv
+**Preprocessing**  
+  python preprocess_urls.py  
+  Outputs: processed_data.csv  
   
-**Logistic Regression:**
-  python train_logistic_regression.py
-  Outputs: metrics + prediction runtime
+**Logistic Regression:**  
+  python train_logistic_regression.py  
+  Outputs: metrics + prediction runtime  
 
-**Random Forest:**
-  python RandomForest.py
-  Outputs: best params, metrics, confusion matrix, feature importance
-**KNN:**
-  python KNN.py
-  Outputs: best params, metrics, ROC curve
+**Random Forest:**  
+  python RandomForest.py  
+  Outputs: best params, metrics, confusion matrix, feature importance  
   
-**Hyperparameter Tuning Summary**
-KNN: n_neighbors, weights, metric
+**KNN:**  
+  python KNN.py  
+  Outputs: best params, metrics, ROC curve  
+  
+**Hyperparameter Tuning Summary**  
+KNN: n_neighbors, weights, metric  
 
-Random Forest: n_estimators, max_depth, min_samples_split,           min_samples_leaf, max_features
+Random Forest: n_estimators, max_depth, min_samples_split, min_samples_leaf, max_features  
 
 Logistic Regression: C values
 
